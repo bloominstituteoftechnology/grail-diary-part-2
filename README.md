@@ -1,4 +1,4 @@
-# Grail Diary Part 2 - Delegates and Protocols
+d# Grail Diary Part 2 - Delegates and Protocols
 
 A student that completes this project shows that they can:
 

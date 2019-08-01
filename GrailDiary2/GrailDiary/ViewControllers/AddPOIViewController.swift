@@ -27,7 +27,11 @@ class AddPOIViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        locationTextField.delegate = self
+        countryTextField.delegate = self
+        clue1TextField.delegate = self
+        clue2TextField.delegate = self
+        clue3TextField.delegate = self
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
