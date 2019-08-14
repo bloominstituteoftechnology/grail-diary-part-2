@@ -1,5 +1,5 @@
 //
-//  NewGrailViewController.swift
+//  AddPOIViewController.swift
 //  GrailDiary
 //
 //  Created by Jordan Christensen on 8/13/19.
@@ -12,7 +12,7 @@ protocol AddGrail {
     func grailWasCreated(_ grail: GrailClue)
 }
 
-class NewGrailViewController: UIViewController {
+class AddPOIViewController: UIViewController {
     
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var countryTextField: UITextField!

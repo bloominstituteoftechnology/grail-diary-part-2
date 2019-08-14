@@ -1,5 +1,5 @@
 //
-//  GrailTableViewCell.swift
+//  POITableViewCell.swift
 //  GrailDiary
 //
 //  Created by Jordan Christensen on 8/14/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GrailTableViewCell: UITableViewCell {
+class POITableViewCell: UITableViewCell {
     
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!

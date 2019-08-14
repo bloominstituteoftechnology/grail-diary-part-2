@@ -1,5 +1,5 @@
 //
-//  GrailDetailViewController.swift
+//  POIDetailViewController.swift
 //  GrailDiary
 //
 //  Created by Jordan Christensen on 8/13/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GrailDetailViewController: UIViewController {
+class POIDetailViewController: UIViewController {
     
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!

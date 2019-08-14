@@ -1,5 +1,5 @@
 //
-//  CluesTableViewController.swift
+//  POIsTableViewController.swift
 //  GrailDiary
 //
 //  Created by Jordan Christensen on 8/13/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CluesTableViewController: UIViewController {
+class POIsTableViewController: UIViewController {
     
     var grailList: [GrailClue] = []
 
@@ -26,11 +26,11 @@ class CluesTableViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddPOIModalSegue" {
-            if let newGrailVC = segue.destination as? NewGrailViewController {
+            if let newGrailVC = segue.destination as? AddPOIViewController {
                 newGrailVC.delegate = self
             }
         } else if segue.identifier == "ShowPOIDetailSegue" {
-            if let grailDetailVC = segue.destination as? GrailDetailViewController {
+            if let grailDetailVC = segue.destination as? POIDetailViewController {
                 guard let indexPath = grailTableView.indexPathForSelectedRow else { return }
                 grailDetailVC.grail = grailList[indexPath.row]
             }
@@ -39,7 +39,7 @@ class CluesTableViewController: UIViewController {
 
 }
 
-extension CluesTableViewController: AddGrail {
+extension POIsTableViewController: AddGrail {
     func grailWasCreated(_ grail: GrailClue) {
         grailList.append(grail)
         dismiss(animated: true, completion: nil)
@@ -47,13 +47,13 @@ extension CluesTableViewController: AddGrail {
     }
 }
 
-extension CluesTableViewController: UITableViewDataSource {
+extension POIsTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return grailList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GrailCell", for: indexPath) as? GrailTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GrailCell", for: indexPath) as? POITableViewCell else { return UITableViewCell() }
         
         cell.grail = grailList[indexPath.row]
         
