@@ -20,8 +20,8 @@ class POIsTableViewController: UIViewController {
         // Do any additional setup after loading the view.
         grailTableView.dataSource = self
         
-        grailList.append(POI(location: "Utah", country: "USA", clues: ["go left", "go right"]))
-        grailList.append(POI(location: "Utah", country: "USA", clues: ["go right", "go left"]))
+        grailList.append(POI(location: "Shanghai", country: "China", clues: ["go left", "go right", "go up"]))
+        grailList.append(POI(location: "Utah", country: "USA", clues: ["turn around", "go right"]))
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,5 +59,9 @@ extension POIsTableViewController: UITableViewDataSource {
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "\(grailList.count) Positions of Interest"
     }
 }

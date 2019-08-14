@@ -22,8 +22,8 @@ class POIDetailViewController: UIViewController {
         countryLabel.text = grail.country
         locationLabel.text = grail.location
         self.title = grail.location
-        for x in grail.clues {
-            cluesTextView.text = "\(cluesTextView.text ?? "")\(x)\n"
+        for x in 0...grail.clues.count-1 {
+            cluesTextView.text = "\(cluesTextView.text ?? "")\(x+1). \(grail.clues[x])\n"
         }
     }
     
