@@ -1,5 +1,5 @@
 //
-//  GrailClue.swift
+//  POI.swift
 //  GrailDiary
 //
 //  Created by Jordan Christensen on 8/13/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct GrailClue {
+struct POI {
     var location: String
     var country: String
     var clues: [String]

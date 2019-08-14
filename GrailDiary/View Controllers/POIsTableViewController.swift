@@ -10,7 +10,7 @@ import UIKit
 
 class POIsTableViewController: UIViewController {
     
-    var grailList: [GrailClue] = []
+    var grailList: [POI] = []
 
     @IBOutlet weak var grailTableView: UITableView!
     
@@ -20,8 +20,8 @@ class POIsTableViewController: UIViewController {
         // Do any additional setup after loading the view.
         grailTableView.dataSource = self
         
-        grailList.append(GrailClue(location: "Utah", country: "USA", clues: ["go left", "go right"]))
-        grailList.append(GrailClue(location: "Utah", country: "USA", clues: ["go right", "go left"]))
+        grailList.append(POI(location: "Utah", country: "USA", clues: ["go left", "go right"]))
+        grailList.append(POI(location: "Utah", country: "USA", clues: ["go right", "go left"]))
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,7 +40,7 @@ class POIsTableViewController: UIViewController {
 }
 
 extension POIsTableViewController: AddGrail {
-    func grailWasCreated(_ grail: GrailClue) {
+    func POIWasCreated(_ grail: POI) {
         grailList.append(grail)
         dismiss(animated: true, completion: nil)
         grailTableView.reloadData()

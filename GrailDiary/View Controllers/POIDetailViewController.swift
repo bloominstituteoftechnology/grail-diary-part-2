@@ -14,7 +14,7 @@ class POIDetailViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var cluesTextView: UITextView!
     
-    var grail: GrailClue?
+    var grail: POI?
     
     override func viewDidLoad() {
         super.viewDidLoad()

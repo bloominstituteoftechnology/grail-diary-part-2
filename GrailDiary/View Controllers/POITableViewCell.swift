@@ -14,7 +14,7 @@ class POITableViewCell: UITableViewCell {
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var cluesLabel: UILabel!
     
-    var grail: GrailClue? {
+    var grail: POI? {
         didSet{
             updateViews()
         }

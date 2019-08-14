@@ -15,7 +15,7 @@
 		0EBDD773230331F5003A2149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBDD771230331F5003A2149 /* LaunchScreen.storyboard */; };
 		0EBDD77C23033C53003A2149 /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBDD77B23033C53003A2149 /* POIDetailViewController.swift */; };
 		0EBDD77E23033C73003A2149 /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBDD77D23033C73003A2149 /* AddPOIViewController.swift */; };
-		0EBDD78123033CE8003A2149 /* GrailClue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBDD78023033CE8003A2149 /* GrailClue.swift */; };
+		0EBDD78123033CE8003A2149 /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBDD78023033CE8003A2149 /* POI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		0EBDD774230331F5003A2149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EBDD77B23033C53003A2149 /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
 		0EBDD77D23033C73003A2149 /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
-		0EBDD78023033CE8003A2149 /* GrailClue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrailClue.swift; sourceTree = "<group>"; };
+		0EBDD78023033CE8003A2149 /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		0EBDD77F23033CC8003A2149 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0EBDD78023033CE8003A2149 /* GrailClue.swift */,
+				0EBDD78023033CE8003A2149 /* POI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 				0EBDD77C23033C53003A2149 /* POIDetailViewController.swift in Sources */,
 				0E92775323048CDE008AA3DA /* POITableViewCell.swift in Sources */,
 				0EBDD76B230331F4003A2149 /* POIsTableViewController.swift in Sources */,
-				0EBDD78123033CE8003A2149 /* GrailClue.swift in Sources */,
+				0EBDD78123033CE8003A2149 /* POI.swift in Sources */,
 				0EBDD769230331F4003A2149 /* AppDelegate.swift in Sources */,
 				0EBDD77E23033C73003A2149 /* AddPOIViewController.swift in Sources */,
 			);
