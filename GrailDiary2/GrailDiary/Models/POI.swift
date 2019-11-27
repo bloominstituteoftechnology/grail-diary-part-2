@@ -9,7 +9,9 @@
 import Foundation
 
 
+// POI struct with specific attributes.
 struct POI {
+    // New properties set to certain types according to what is needed for each.
     let location: String
     let country: String
     var clues: [String]
