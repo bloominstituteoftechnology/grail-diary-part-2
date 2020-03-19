@@ -33,7 +33,7 @@ class POITableViewCell: UITableViewCell {
         if let myPoi = poi {
             objectLabelLocation.text = myPoi.location
             objectLabelCountry.text = myPoi.country
-            //objectLabelClues.text = "\(myPoi.clues[0]), \(myPoi.clues[1]), \(myPoi.clues[2])"
+            objectLabelClues.text = "\(myPoi.clues[0]), \(myPoi.clues[1]), \(myPoi.clues[2])"
         }
     }
 

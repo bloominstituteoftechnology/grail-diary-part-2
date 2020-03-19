@@ -30,7 +30,7 @@ class POIDetailViewController: UIViewController {
         }
         objectLabelLocation.text = myPOI.location
         objectLabelCountry.text = myPOI.country
-        //objectLabelClues.text = myPOI.clues
+        objectLabelClues.text = "\(myPOI.clues[0]), \(myPOI.clues[1]), \(myPOI.clues[2])"
     }
     
     
