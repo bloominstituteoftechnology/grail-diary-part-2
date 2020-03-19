@@ -28,8 +28,24 @@ class POIstableViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let segueIdentifier = segue.identifier {
+            switch(segueIdentifier) {
+            case "AddPOIModalSegue":
+                guard let segueDestination = segue.destination as? AddPOIViewController else {
+                    return
+                }
+                segueDestination.delegate = self
+                
+            case "ShowPOIDetailSegue":
+                guard let segueDestination = segue.destination as? POIDetailViewController else {
+                    return
+                }
+                //segueDestination.delegate = self
+                
+            default: break
+                
+            }
+        }
     }
     
 
@@ -46,6 +62,13 @@ extension POIstableViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
+
+extension POIstableViewController: AddPOIDelegate {
+    func poiWasAdded(_ poi: POI) {
+        self.poi.append(poi)
+        dismiss(animated: true, completion: nil)
+        objectTableView.reloadData()
+    }
+}
+
