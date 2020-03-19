@@ -22,7 +22,6 @@ class POIstableViewController: UIViewController {
         objectTableView.dataSource = self
     }
     
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -47,8 +46,6 @@ class POIstableViewController: UIViewController {
             }
         }
     }
-    
-
 }
 
 extension POIstableViewController: UITableViewDataSource {
@@ -59,7 +56,12 @@ extension POIstableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = objectTableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath)
-        return cell
+        guard let myCell = cell as? POITableViewCell else {
+            return cell
+        }
+        
+        myCell.poi = poi[indexPath.row]
+        return myCell
     }
 }
 
