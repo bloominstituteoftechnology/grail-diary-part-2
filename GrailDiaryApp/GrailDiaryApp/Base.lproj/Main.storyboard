@@ -114,10 +114,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" rowHeight="60" id="WP2-0e-CH3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" rowHeight="60" id="WP2-0e-CH3" customClass="POITableViewCell" customModule="GrailDiaryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WP2-0e-CH3" id="Pwi-jZ-ITm" customClass="POITableViewCell" customModule="GrailDiaryApp" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WP2-0e-CH3" id="Pwi-jZ-ITm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -154,6 +154,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="objectLabelClues" destination="Pnt-nj-bIj" id="VYB-ng-86E"/>
+                                            <outlet property="objectLabelCountry" destination="u7S-aF-wCU" id="ycy-bU-G2v"/>
+                                            <outlet property="objectLabelLocation" destination="h5e-CL-sEN" id="oOq-sD-ENp"/>
                                             <segue destination="JXX-IK-4Tk" kind="show" identifier="ShowPOIDetailSegue" id="Jol-ei-t9L"/>
                                         </connections>
                                     </tableViewCell>
@@ -247,6 +250,12 @@
                         <viewLayoutGuide key="safeArea" id="nzS-en-8by"/>
                     </view>
                     <navigationItem key="navigationItem" id="jHW-VQ-fec"/>
+                    <connections>
+                        <outlet property="objectLabelClues" destination="bac-ot-4TZ" id="UXz-zf-fnk"/>
+                        <outlet property="objectLabelCountry" destination="YFL-ZM-gLd" id="r1M-7P-JUQ"/>
+                        <outlet property="objectLabelLocation" destination="rkg-Ne-iD4" id="P5N-ef-4i0"/>
+                        <outlet property="objectTextViewClues" destination="bbc-RJ-9Tl" id="4E4-Qp-z6x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdQ-1N-qf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

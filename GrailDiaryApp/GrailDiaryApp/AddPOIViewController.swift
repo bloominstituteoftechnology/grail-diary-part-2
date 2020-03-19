@@ -18,7 +18,7 @@ class AddPOIViewController: UIViewController, AddPOIDelegate {
     
     //Variable Initialization
     //var previousController: POIstableViewController?
-    var delegate: AddPOIDelegate?
+    var delegate: POIstableViewController?
     
     
     //Objects| Outlet
@@ -48,7 +48,10 @@ class AddPOIViewController: UIViewController, AddPOIDelegate {
             
             let poi = POI(location: location, country: country, clues: [clue1, clue2, clue3])
             
-            delegate?.poiWasAdded(poi)
+            //delegate?.poiWasAdded(poi)
+            delegate?.poi.append(poi)
+            delegate?.objectTableView.reloadData()
+            dismiss(animated: true, completion: nil)
             
         }
     }
@@ -60,7 +63,7 @@ class AddPOIViewController: UIViewController, AddPOIDelegate {
     
     //Functions
     func poiWasAdded(_ poi: POI) {
-        print("hello")
+        //Nothing
     }
     
     

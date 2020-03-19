@@ -10,18 +10,17 @@ import UIKit
 
 class POIstableViewController: UIViewController {
     
+    //Variable Initialization
+    var poi: [POI] = []
+    
     //Objects
     @IBOutlet weak var objectTableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         objectTableView.dataSource = self
     }
-    
-    //Variable Initialization
-    var poi: [POI] = []
     
     
     // MARK: - Navigation
@@ -40,6 +39,7 @@ class POIstableViewController: UIViewController {
                 guard let segueDestination = segue.destination as? POIDetailViewController else {
                     return
                 }
+                segueDestination.poi = poi[objectTableView.indexPathForSelectedRow?.row ?? 0]
                 //segueDestination.delegate = self
                 
             default: break
@@ -59,7 +59,6 @@ extension POIstableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = objectTableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath)
-        
         return cell
     }
 }

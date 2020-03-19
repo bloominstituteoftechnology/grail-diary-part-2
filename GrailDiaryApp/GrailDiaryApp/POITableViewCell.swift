@@ -9,10 +9,32 @@
 import UIKit
 
 class POITableViewCell: UITableViewCell {
-
+    
+    //Variable Initialization
+    var poi: POI? { didSet {
+        updateViews(poi)
+        print("Poi was set")
+        }
+    }
+    
+    //Objects| Outlet
+    @IBOutlet weak var objectLabelLocation: UILabel!
+    @IBOutlet weak var objectLabelCountry: UILabel!
+    @IBOutlet weak var objectLabelClues: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        updateViews(poi)
+        
+    }
+    
+    //Functions
+    private func updateViews(_ poi: POI?) {
+        if let myPoi = poi {
+            objectLabelLocation.text = myPoi.location
+            objectLabelCountry.text = myPoi.country
+            //objectLabelClues.text = "\(myPoi.clues[0]), \(myPoi.clues[1]), \(myPoi.clues[2])"
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
