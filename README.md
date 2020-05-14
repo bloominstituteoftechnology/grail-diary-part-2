@@ -1,42 +1,7 @@
-# Grail Diary Part 2 - Delegates and Protocols
 
- A student that completes this project shows that they can:
-
-- understand and explain what a protocol is and common scenarios for their use
-- define a custom protocol, and make a class or struct conform to it
-- understand and explain the purpose of UITableViewController
-- use a regular UIViewController to display a UITableView
-- create a custom UITableViewCell
-- understand and explain the delegate pattern and why it is used
-
-## Introduction
-
-Grail Diary is an app that allows the user to track locations of interest (POIs) and useful facts about those locations.
-
-## Instructions
-
-Please use the same repository you used yesterday for Grail Diary Part 1. If you've created a PR to submit your work, you'll continue to use the same PR. New commits will automatically be added to that PR. Just submit the same link again at the end of this assignment.
-
-### File Tasks
-
-1. Create a new file using the Cocoa Touch Class template; call it `AddPOIViewController` and make it a subclass of `UIViewController`
-2. Create one more Cocoa Touch Class in the same way called `POIDetailViewController` (also subclassed from `UIViewController`).
-3. Create another Cocoa Touch Class subclassed from `UITableViewCell` called `POITableViewCell`
-4. Create a Swift file called `POI` (this is your model)
-
-### Storyboard Tasks
-
-5. Set the custom class for each view controller scene in the storyboard to match the names of the files you just created
-
-### Code Tasks
-
-#### In `POI.swift`:
-
-6. Create a `struct` called `POI` that models 3 properties: `location`, `country`, and `clues`; the data types are `String`, `String`, and an array of `String` objects
 
 #### In `POIsTableViewController.swift`:
 
-7. Create an array property to store your `POI` models
 8. Create an `IBOutlet` to link the table view to your code; wire up this outlet to the table view in the storyboard. This is necessary because we are using a table view in a normal `UIViewController`.
 9. In an extension, make this class conform to the `UITableViewDataSource` protocol
 10. Implement the following protocol methods: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAt:indexPath:)`
