@@ -1,6 +1,6 @@
 # Grail Diary Part 2 - Delegates and Protocols
 
-A student that completes this project shows that they can:
+ A student that completes this project shows that they can:
 
 - understand and explain what a protocol is and common scenarios for their use
 - define a custom protocol, and make a class or struct conform to it
