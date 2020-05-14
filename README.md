@@ -1,12 +1,4 @@
 
-
-#### In `POIsTableViewController.swift`:
-
-8. Create an `IBOutlet` to link the table view to your code; wire up this outlet to the table view in the storyboard. This is necessary because we are using a table view in a normal `UIViewController`.
-9. In an extension, make this class conform to the `UITableViewDataSource` protocol
-10. Implement the following protocol methods: `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAt:indexPath:)`
-11. Set the view controller as the delegate and data source for the table view.
-
 #### In `AddPOIViewController.swift`:
 
 12. Declare `IBOutlet` properties for the 5 textfields in this view; wire these up to their appropriate textfields in the storyboard

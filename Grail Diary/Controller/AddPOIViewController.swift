@@ -10,6 +10,12 @@ import UIKit
 
 class AddPOIViewController: UIViewController {
 
+    @IBOutlet weak var location: UITextField!
+    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var clueOne: UITextField!
+    @IBOutlet weak var clueTwo: UITextField!
+    @IBOutlet weak var clueThree: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

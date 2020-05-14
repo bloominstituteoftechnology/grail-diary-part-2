@@ -90,6 +90,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="adT-iA-txd" id="veD-nC-gXE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,6 +237,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ynR-It-Se6"/>
                     </view>
+                    <connections>
+                        <outlet property="clueOne" destination="RhI-8g-Jsn" id="DlP-Z5-sk2"/>
+                        <outlet property="clueThree" destination="qwk-e7-7e1" id="4JS-w2-y1d"/>
+                        <outlet property="clueTwo" destination="l6p-wr-6sE" id="4dO-0t-mL3"/>
+                        <outlet property="country" destination="B05-Lu-iPn" id="ufO-l3-jhq"/>
+                        <outlet property="location" destination="lFC-b2-BIe" id="2Dd-bM-bsY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3b-TQ-eZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
