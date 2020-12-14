@@ -13,6 +13,10 @@
 		A8B05E082586ECB300886C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B05E072586ECB300886C90 /* Assets.xcassets */; };
 		A8B05E0B2586ECB300886C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B05E092586ECB300886C90 /* LaunchScreen.storyboard */; };
 		A8B05E1A2586F80000886C90 /* POIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E192586F80000886C90 /* POIsViewController.swift */; };
+		A8B05E3F2587077F00886C90 /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E3E2587077F00886C90 /* AddPOIViewController.swift */; };
+		A8B05E422587078E00886C90 /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E412587078E00886C90 /* POIDetailViewController.swift */; };
+		A8B05E45258707AC00886C90 /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E44258707AC00886C90 /* POITableViewCell.swift */; };
+		A8B05E48258707BC00886C90 /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E47258707BC00886C90 /* POI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A8B05E0A2586ECB300886C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B05E0C2586ECB300886C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B05E192586F80000886C90 /* POIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIsViewController.swift; sourceTree = "<group>"; };
+		A8B05E3E2587077F00886C90 /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
+		A8B05E412587078E00886C90 /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
+		A8B05E44258707AC00886C90 /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		A8B05E47258707BC00886C90 /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				A8B05E192586F80000886C90 /* POIsViewController.swift */,
+				A8B05E3E2587077F00886C90 /* AddPOIViewController.swift */,
+				A8B05E412587078E00886C90 /* POIDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -80,6 +90,7 @@
 		A8B05E152586ED7700886C90 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8B05E44258707AC00886C90 /* POITableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +98,7 @@
 		A8B05E162586ED7A00886C90 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A8B05E47258707BC00886C90 /* POI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B05E48258707BC00886C90 /* POI.swift in Sources */,
 				A8B05DFF2586ECB000886C90 /* AppDelegate.swift in Sources */,
+				A8B05E3F2587077F00886C90 /* AddPOIViewController.swift in Sources */,
 				A8B05E012586ECB000886C90 /* SceneDelegate.swift in Sources */,
 				A8B05E1A2586F80000886C90 /* POIsViewController.swift in Sources */,
+				A8B05E45258707AC00886C90 /* POITableViewCell.swift in Sources */,
+				A8B05E422587078E00886C90 /* POIDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
