@@ -23,7 +23,7 @@ class POITableViewCell: UITableViewCell {
         guard let poi = poi else { return }
         locationLabel.text = poi.location
         countryLabel.text = poi.country
-        cluesCountLabel.text = "\(poi.clues.count) of clue(s)"
+        cluesCountLabel.text = "\(poi.clues.count) clue(s)"
     }
 
 }

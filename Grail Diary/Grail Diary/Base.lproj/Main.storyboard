@@ -111,7 +111,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D0v-Oh-t8G">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Greece" translatesAutoresizingMaskIntoConstraints="NO" id="D0v-Oh-t8G">
                                 <rect key="frame" x="20" y="160" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="9Rp-r0-UPr"/>
@@ -155,6 +155,7 @@
                             <constraint firstItem="dGp-PP-mCq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D0v-Oh-t8G" secondAttribute="trailing" constant="8" id="LbQ-uL-a6g"/>
                             <constraint firstItem="KM6-ph-sEJ" firstAttribute="leading" secondItem="6dy-2h-2bx" secondAttribute="leading" id="PJZ-wb-EJQ"/>
                             <constraint firstItem="D0v-Oh-t8G" firstAttribute="top" secondItem="dGp-PP-mCq" secondAttribute="top" id="WRC-3O-rXA"/>
+                            <constraint firstItem="guv-2w-7Mk" firstAttribute="trailing" secondItem="6dy-2h-2bx" secondAttribute="trailing" constant="351" id="c7M-kR-5Sh"/>
                             <constraint firstItem="KM6-ph-sEJ" firstAttribute="trailing" secondItem="dGp-PP-mCq" secondAttribute="trailing" id="gMM-Nz-Qvo"/>
                             <constraint firstItem="eR2-0F-XEi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D0v-Oh-t8G" secondAttribute="trailing" constant="8" id="wfM-A8-2sz"/>
                         </constraints>
@@ -296,6 +297,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Greece" width="730" height="424"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
