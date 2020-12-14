@@ -13,6 +13,7 @@ class POIsTableViewController: UIViewController {
 
     let addPOIModalSegue = "AddPOIModalSegue"
     let showPOIDetailSegue = "ShowPOIDetailSegue"
+    let clueCell = "ClueCell"
     var poiArray : [POI] = []
     
     override func viewDidLoad() {
@@ -33,11 +34,16 @@ class POIsTableViewController: UIViewController {
 extension POIsTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return poiArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: clueCell, for: indexPath) as? POITableViewCell else { return UITableViewCell()}
+        
+        let poi = poiArray[indexPath.row]
+        cell.poi = poi
+        
+        return cell
     }
     
     
