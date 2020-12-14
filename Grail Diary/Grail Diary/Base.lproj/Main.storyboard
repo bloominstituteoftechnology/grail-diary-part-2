@@ -199,11 +199,17 @@
                                         <rect key="frame" x="0.0" y="57" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nOd-3c-c8S" id="nuL-fc-j49"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hj2-DI-xQj">
                                         <rect key="frame" x="0.0" y="107" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nOd-3c-c8S" id="reQ-12-c1t"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZu-A4-QZr">
                                         <rect key="frame" x="0.0" y="157" width="374" height="20.5"/>
@@ -215,16 +221,25 @@
                                         <rect key="frame" x="0.0" y="193.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nOd-3c-c8S" id="G17-hv-uz0"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UuT-p2-XDn">
                                         <rect key="frame" x="0.0" y="243.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nOd-3c-c8S" id="ioZ-lB-D08"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJt-Ve-1rK">
                                         <rect key="frame" x="0.0" y="293.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nOd-3c-c8S" id="fLf-Xs-sRj"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -241,6 +256,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TrP-Da-x4B"/>
+                    <connections>
+                        <outlet property="clueOneTextField" destination="KfU-9d-qOB" id="yNk-Ew-4U0"/>
+                        <outlet property="clueThreeTextField" destination="pJt-Ve-1rK" id="ZvG-Y4-sLl"/>
+                        <outlet property="clueTwoTextField" destination="UuT-p2-XDn" id="QvR-hg-WoL"/>
+                        <outlet property="countryTextField" destination="hj2-DI-xQj" id="b0O-vV-q0z"/>
+                        <outlet property="locationTextField" destination="eDm-1c-VGc" id="GyN-ED-gcP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQ6-pp-bjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

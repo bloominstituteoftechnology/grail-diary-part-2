@@ -7,29 +7,74 @@
 
 import UIKit
 
-class AddPOIViewController: UIViewController {
+protocol AddPOIDelegate {
+    func poiWasAdded(_ poi: POI)
+}
 
+class AddPOIViewController: UIViewController {
+    
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var countryTextField: UITextField!
+    @IBOutlet weak var clueOneTextField: UITextField!
+    @IBOutlet weak var clueTwoTextField: UITextField!
+    @IBOutlet weak var clueThreeTextField: UITextField!
+    
+    var delegate: AddPOIDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func cancelTapped(_ sender: Any) {
+    @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func saveTapped(_ sender: Any) {
+    @IBAction func saveTapped(_ sender: UIBarButtonItem) {
+        guard let location = locationTextField.text,
+              let country = countryTextField.text,
+              !location.isEmpty,
+              !country.isEmpty else { return }
         
+        var poi = POI(location: location, country: country, clues: [])
+        
+        if let clueOne = clueOneTextField.text,
+           !clueOne.isEmpty {
+            poi.clues.append(clueOne)
+        }
+        
+        if let clueTwo = clueTwoTextField.text,
+           !clueTwo.isEmpty {
+            poi.clues.append(clueTwo)
+        }
+        
+        if let clueThree = clueThreeTextField.text,
+           !clueThree.isEmpty {
+            poi.clues.append(clueThree)
+        }
+        
+        delegate?.poiWasAdded(poi)
     }
+}
+
+extension AddPOIViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let text = textField.text,
+           !text.isEmpty {
+            switch textField {
+            case locationTextField:
+                countryTextField.becomeFirstResponder()
+            case countryTextField:
+                clueOneTextField.becomeFirstResponder()
+            case clueOneTextField:
+                clueTwoTextField.becomeFirstResponder()
+            case clueTwoTextField:
+                clueThreeTextField.becomeFirstResponder()
+            default:
+                textField.resignFirstResponder()
+            }
+        }
+    }
+    
 }
