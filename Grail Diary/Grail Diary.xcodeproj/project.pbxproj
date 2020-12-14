@@ -12,7 +12,7 @@
 		A8B05E062586ECB000886C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B05E042586ECB000886C90 /* Main.storyboard */; };
 		A8B05E082586ECB300886C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B05E072586ECB300886C90 /* Assets.xcassets */; };
 		A8B05E0B2586ECB300886C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B05E092586ECB300886C90 /* LaunchScreen.storyboard */; };
-		A8B05E1A2586F80000886C90 /* POIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E192586F80000886C90 /* POIsViewController.swift */; };
+		A8B05E1A2586F80000886C90 /* POIsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E192586F80000886C90 /* POIsTableViewController.swift */; };
 		A8B05E3F2587077F00886C90 /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E3E2587077F00886C90 /* AddPOIViewController.swift */; };
 		A8B05E422587078E00886C90 /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E412587078E00886C90 /* POIDetailViewController.swift */; };
 		A8B05E45258707AC00886C90 /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B05E44258707AC00886C90 /* POITableViewCell.swift */; };
@@ -27,7 +27,7 @@
 		A8B05E072586ECB300886C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B05E0A2586ECB300886C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B05E0C2586ECB300886C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8B05E192586F80000886C90 /* POIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIsViewController.swift; sourceTree = "<group>"; };
+		A8B05E192586F80000886C90 /* POIsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIsTableViewController.swift; sourceTree = "<group>"; };
 		A8B05E3E2587077F00886C90 /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
 		A8B05E412587078E00886C90 /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
 		A8B05E44258707AC00886C90 /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		A8B05E132586ED6B00886C90 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A8B05E192586F80000886C90 /* POIsViewController.swift */,
+				A8B05E192586F80000886C90 /* POIsTableViewController.swift */,
 				A8B05E3E2587077F00886C90 /* AddPOIViewController.swift */,
 				A8B05E412587078E00886C90 /* POIDetailViewController.swift */,
 			);
@@ -177,7 +177,7 @@
 				A8B05DFF2586ECB000886C90 /* AppDelegate.swift in Sources */,
 				A8B05E3F2587077F00886C90 /* AddPOIViewController.swift in Sources */,
 				A8B05E012586ECB000886C90 /* SceneDelegate.swift in Sources */,
-				A8B05E1A2586F80000886C90 /* POIsViewController.swift in Sources */,
+				A8B05E1A2586F80000886C90 /* POIsTableViewController.swift in Sources */,
 				A8B05E45258707AC00886C90 /* POITableViewCell.swift in Sources */,
 				A8B05E422587078E00886C90 /* POIDetailViewController.swift in Sources */,
 			);
