@@ -46,9 +46,9 @@ extension POIsTableViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let currentPOI = poiList[indexPath.row]
-        let cell = POITableViewCell()
-        
+        let currentPOI = poiList[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "POICell", for: indexPath) as! POITableViewCell
+        cell.poi = currentPOI
         return cell
     }
 
