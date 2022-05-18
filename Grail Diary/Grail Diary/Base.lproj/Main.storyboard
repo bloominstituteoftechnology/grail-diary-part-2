@@ -60,6 +60,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cluesCountLabel" destination="Gem-AK-IUI" id="6fY-GK-Oq5"/>
+                                            <outlet property="countryLabel" destination="Wrd-7h-R2y" id="l2t-wv-BGd"/>
+                                            <outlet property="locationLabel" destination="oQR-au-f4B" id="yja-mO-P0b"/>
                                             <segue destination="LKr-7m-h29" kind="show" id="hxf-ni-XgY"/>
                                         </connections>
                                     </tableViewCell>
