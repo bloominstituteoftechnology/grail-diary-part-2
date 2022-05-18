@@ -78,21 +78,11 @@
 				7B4778022830A60D00EEACA4 /* Other */,
 				7B85DACD28347BB2005AF675 /* Model */,
 				7B85DACA28347B87005AF675 /* Views */,
-				7B85DAC228347AD2005AF675 /* View Controllers */,
+				7B85DACE28347F29005AF675 /* View Controllers */,
 				7B607A1C282EE25600B4E9C4 /* Main.storyboard */,
 				7B607A24282EE25900B4E9C4 /* Info.plist */,
 			);
 			path = "Grail Diary";
-			sourceTree = "<group>";
-		};
-		7B85DAC228347AD2005AF675 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				7B607A1A282EE25600B4E9C4 /* POIsTableViewController.swift */,
-				7B85DAC328347AF6005AF675 /* AddPOIViewController.swift */,
-				7B85DAC528347B2A005AF675 /* POIDetailViewController.swift */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		7B85DACA28347B87005AF675 /* Views */ = {
@@ -109,6 +99,16 @@
 				7B85DACB28347BA7005AF675 /* POI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7B85DACE28347F29005AF675 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B607A1A282EE25600B4E9C4 /* POIsTableViewController.swift */,
+				7B85DAC328347AF6005AF675 /* AddPOIViewController.swift */,
+				7B85DAC528347B2A005AF675 /* POIDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
