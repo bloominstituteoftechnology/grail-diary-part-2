@@ -126,10 +126,9 @@
                                     <constraint firstAttribute="width" secondItem="bXY-DI-b0S" secondAttribute="height" multiplier="1:1" id="kAO-oV-bE4"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mzx-JJ-lzd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mzx-JJ-lzd">
                                 <rect key="frame" x="20" y="379" width="374" height="483"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -155,6 +154,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f5t-qy-6fe"/>
+                    <connections>
+                        <outlet property="cluesTextView" destination="Mzx-JJ-lzd" id="gAL-QS-SyC"/>
+                        <outlet property="countryLabel" destination="MIx-8L-KKs" id="5fe-9f-iTU"/>
+                        <outlet property="locationLabel" destination="bBa-OR-FWB" id="dWF-A5-uKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Hz-0x-B3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
