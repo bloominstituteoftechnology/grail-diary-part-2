@@ -22,6 +22,14 @@ class POIsTableViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
+    // Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddPOIModalSegue" {
+            let addPOIVC = segue.destination as! AddPOIViewController
+            addPOIVC.delegate = self
+        }
+    }
 
 } //End of class
 
@@ -32,7 +40,18 @@ extension POIsTableViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+//        let currentPOI = poiList[indexPath.row]
+        let cell = POITableViewCell()
+        
+        return cell
     }
-    
+
+} //End of extension
+
+extension POIsTableViewController: AddPOIDelegate {
+    func poiWasAdded(_ poi: POI) {
+        self.poiList.append(poi)
+        dismiss(animated: true)
+        self.tableView.reloadData()
+    }
 } //End of extension

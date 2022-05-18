@@ -55,7 +55,7 @@ extension AddPOIViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         guard let text = textField.text,
-              !text.isEmpty else { return false }
+              !text.isEmpty else { return true }
         
         switch textField {
             
@@ -78,6 +78,7 @@ extension AddPOIViewController: UITextFieldDelegate {
             textField.resignFirstResponder()
         
         }
+        return true
     }
     
 } //End of extension
