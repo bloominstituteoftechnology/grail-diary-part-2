@@ -9,14 +9,13 @@ import UIKit
 
 class POIsTableViewController: UIViewController {
     
-    //MARK: - Properties
+//MARK: - Properties
     var poiList: [POI] = []
     
-    //MARK: - IBOutlets
+//MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
-    //MARK: - Methods
-    
+//MARK: - Methods
     // Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()

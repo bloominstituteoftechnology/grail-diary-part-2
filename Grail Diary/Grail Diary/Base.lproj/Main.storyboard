@@ -196,11 +196,17 @@
                                         <rect key="frame" x="0.0" y="53" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="wzR-YC-X6v" id="vg2-FV-XGl"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KmW-Xd-0Lo">
                                         <rect key="frame" x="0.0" y="103" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="wzR-YC-X6v" id="G47-zf-mcv"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9T7-a2-gxv">
                                         <rect key="frame" x="0.0" y="153" width="374" height="17"/>
@@ -212,25 +218,42 @@
                                         <rect key="frame" x="0.0" y="186" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="wzR-YC-X6v" id="CNz-Dx-gRS"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHt-xS-Jl2">
                                         <rect key="frame" x="0.0" y="236" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="wzR-YC-X6v" id="K31-es-H2z"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-jk-40J">
                                         <rect key="frame" x="0.0" y="286" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="wzR-YC-X6v" id="Zha-MB-t3m"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKi-vc-hYS">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="ABZ-Rj-N6J"/>
+                                    <barButtonItem systemItem="cancel" id="ABZ-Rj-N6J">
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="wzR-YC-X6v" id="2bx-rE-6A1"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bDh-TY-20M"/>
-                                    <barButtonItem systemItem="save" id="Wzt-I7-RhI"/>
+                                    <barButtonItem systemItem="save" id="Wzt-I7-RhI">
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="wzR-YC-X6v" id="OUf-eg-LaN"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -245,6 +268,13 @@
                             <constraint firstItem="bp1-KA-I2S" firstAttribute="top" secondItem="TEs-Da-qjU" secondAttribute="top" constant="20" id="uJ3-Y4-S6l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clue1TextField" destination="LHM-Xt-Kod" id="5Jf-dZ-xUk"/>
+                        <outlet property="clue2TextField" destination="BHt-xS-Jl2" id="sKh-6Q-32P"/>
+                        <outlet property="clue3TextField" destination="6wK-jk-40J" id="egE-FD-5zg"/>
+                        <outlet property="countryTextField" destination="KmW-Xd-0Lo" id="rcZ-oQ-9Dk"/>
+                        <outlet property="locationTextField" destination="3xP-DF-OLu" id="rI6-C7-hiG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSR-bx-T1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
