@@ -13,6 +13,10 @@
 		7B607A1E282EE25600B4E9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B607A1C282EE25600B4E9C4 /* Main.storyboard */; };
 		7B607A20282EE25900B4E9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B607A1F282EE25900B4E9C4 /* Assets.xcassets */; };
 		7B607A23282EE25900B4E9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B607A21282EE25900B4E9C4 /* LaunchScreen.storyboard */; };
+		7B85DAC428347AF6005AF675 /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85DAC328347AF6005AF675 /* AddPOIViewController.swift */; };
+		7B85DAC628347B2A005AF675 /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85DAC528347B2A005AF675 /* POIDetailViewController.swift */; };
+		7B85DAC828347B73005AF675 /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85DAC728347B73005AF675 /* POITableViewCell.swift */; };
+		7B85DACC28347BA7005AF675 /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85DACB28347BA7005AF675 /* POI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7B607A1F282EE25900B4E9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B607A22282EE25900B4E9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B607A24282EE25900B4E9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B85DAC328347AF6005AF675 /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
+		7B85DAC528347B2A005AF675 /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
+		7B85DAC728347B73005AF675 /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		7B85DACB28347BA7005AF675 /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +76,39 @@
 			isa = PBXGroup;
 			children = (
 				7B4778022830A60D00EEACA4 /* Other */,
-				7B607A1A282EE25600B4E9C4 /* POIsTableViewController.swift */,
+				7B85DACD28347BB2005AF675 /* Model */,
+				7B85DACA28347B87005AF675 /* Views */,
+				7B85DAC228347AD2005AF675 /* View Controllers */,
 				7B607A1C282EE25600B4E9C4 /* Main.storyboard */,
 				7B607A24282EE25900B4E9C4 /* Info.plist */,
 			);
 			path = "Grail Diary";
+			sourceTree = "<group>";
+		};
+		7B85DAC228347AD2005AF675 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B607A1A282EE25600B4E9C4 /* POIsTableViewController.swift */,
+				7B85DAC328347AF6005AF675 /* AddPOIViewController.swift */,
+				7B85DAC528347B2A005AF675 /* POIDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7B85DACA28347B87005AF675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B85DAC728347B73005AF675 /* POITableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B85DACD28347BB2005AF675 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B85DACB28347BA7005AF675 /* POI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B85DACC28347BA7005AF675 /* POI.swift in Sources */,
 				7B607A1B282EE25600B4E9C4 /* POIsTableViewController.swift in Sources */,
+				7B85DAC428347AF6005AF675 /* AddPOIViewController.swift in Sources */,
 				7B607A17282EE25600B4E9C4 /* AppDelegate.swift in Sources */,
 				7B607A19282EE25600B4E9C4 /* SceneDelegate.swift in Sources */,
+				7B85DAC828347B73005AF675 /* POITableViewCell.swift in Sources */,
+				7B85DAC628347B2A005AF675 /* POIDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
